@@ -1,0 +1,8 @@
+{
+  "name": "parser-docker-variables",
+  "version": "0.1.0",
+  "description": "Parser docker variables to window",
+  "scripts": [
+    "parser.sh"
+  ]
+}
