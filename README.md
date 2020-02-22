@@ -32,6 +32,16 @@ window.apiUrl = "http://www.example.com";
 window.authToken = "xxxxxx";
 ```
 
+## Variables
+
+### PATTERN
+
+Type `String` Default: ``
+
+### FILENAME
+
+Type `String` Default: `environment.js`
+
 ## License
 
 Parser Docker Variables is open source software [licensed as MIT](https://github.com/andrelmlins/parser-docker-variables/blob/master/LICENSE).
