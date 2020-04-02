@@ -1,5 +1,8 @@
 #!/bin/sh
 
+FILENAME=$1;
+PATTERN=$2;
+
 env | while IFS= read -r line
 do
   name="${line%%=*}"

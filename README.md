@@ -2,18 +2,36 @@
 
 Parser docker variables to javascript
 
+## Install
+
+with **bpkg**:
+
+```bash
+$ bpkg install andrelmlins/parser-docker-variables -g
+```
+
+with **Homebrew**:
+
+```bash
+$ brew install andrelmlins/parser-docker-variables
+```
+
+with **curl**:
+
+```bash
+$ curl -L https://raw.github.com/andrelmlins/parser-docker-variables/master/parser-docker-variables.sh -o ~/bin/parser-docker-variables && chmod +x ~/bin/parser-docker-variables
+```
+
 ## Usage
 
-```
-$ . parser.sh
-```
-
-or by bpkg
-
-```
-$ curl -Lo- "https://raw.githubusercontent.com/bpkg/bpkg/master/setup.sh" | bash
-$ bpkg install parser-docker-variables -g
+```bash
 $ parser-docker-variables
+```
+
+or
+
+```bash
+$ parser-docker-variables {filename} {pattern}
 ```
 
 ## Example
@@ -25,22 +43,12 @@ API_URL="http://www.example.com"
 AUTH_TOKEN="xxxxxx"
 ```
 
-### Result
+**Result**
 
 ```js
 window.apiUrl = "http://www.example.com";
 window.authToken = "xxxxxx";
 ```
-
-## Variables
-
-### PATTERN
-
-Type `String` Default: ``
-
-### FILENAME
-
-Type `String` Default: `environment.js`
 
 ## License
 

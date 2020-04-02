@@ -3,6 +3,6 @@
   "version": "0.1.0",
   "description": "Parser docker variables to javascript",
   "scripts": [
-    "parser.sh"
+    "parser-docker-variables.sh"
   ]
 }
