@@ -70,7 +70,7 @@ window.authToken = "xxxxxx";
 
 | Name      | Description  | Usage           |
 | --------- | ------------ | --------------- |
-| `version` | Show version | `-V, --version` |
+| `version` | Show version | `-v, --version` |
 | `help`    | Show help    | `-h, --help`    |
 
 ## License
