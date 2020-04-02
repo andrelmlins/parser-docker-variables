@@ -22,19 +22,29 @@ with **curl**:
 $ curl -L https://raw.github.com/andrelmlins/parser-docker-variables/master/parser-docker-variables.sh -o ~/bin/parser-docker-variables && chmod +x ~/bin/parser-docker-variables
 ```
 
+with **Antigen**:
+
+Add `antigen bundle andrelmlins/parser-docker-variables` to your `.zshrc` with your other antigen commands
+
+With **Zgen**:
+
+Add `zgen load andrelmlins/parser-docker-variables` to your `.zshrc` with your other zgen commands
+
 ## Usage
+
+Basic use:
 
 ```bash
 $ parser-docker-variables [options] [pattern]
 ```
 
-with "pbcopy"
+with "pbcopy":
 
 ```bash
 $ parser-docker-variables | pbcopy
 ```
 
-with "echo file"
+with "echo file":
 
 ```bash
 echo $(parser-docker-variables) >> env.js
