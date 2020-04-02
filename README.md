@@ -1,6 +1,6 @@
 # Parser Docker Variables
 
-Parser docker variables to javascript
+Parser Docker Variables for javascript
 
 ## Install
 
@@ -25,13 +25,19 @@ $ curl -L https://raw.github.com/andrelmlins/parser-docker-variables/master/pars
 ## Usage
 
 ```bash
-$ parser-docker-variables
+$ parser-docker-variables [options] [pattern]
 ```
 
-or
+with "pbcopy"
 
 ```bash
-$ parser-docker-variables {filename} {pattern}
+$ parser-docker-variables | pbcopy
+```
+
+with "echo file"
+
+```bash
+echo $(parser-docker-variables) >> env.js
 ```
 
 ## Example
@@ -49,6 +55,13 @@ AUTH_TOKEN="xxxxxx"
 window.apiUrl = "http://www.example.com";
 window.authToken = "xxxxxx";
 ```
+
+## Options
+
+| Name      | Description  | Usage           |
+| --------- | ------------ | --------------- |
+| `version` | Show version | `-V, --version` |
+| `help`    | Show help    | `-h, --help`    |
 
 ## License
 
